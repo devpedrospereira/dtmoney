@@ -1,9 +1,9 @@
-import styled from 'styled-components'
-
 export function App() {
   return (
     <div className="App">
-     <h1>hello world</h1>
+      <h1>
+        hello World!
+      </h1>
     </div>
   );
 }
