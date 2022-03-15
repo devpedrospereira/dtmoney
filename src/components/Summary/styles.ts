@@ -27,5 +27,10 @@ export const Container = styled.div`
             font-weight: 500;
             line-height: 3rem;
         }
+
+        &:last-child{
+            background-color: var(--green);
+            color: var(--shape)
+        }
     }
 `
