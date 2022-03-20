@@ -1,4 +1,5 @@
 import Modal from "react-modal";
+import { Container } from "./styles";
 
 interface NewTransactionModal {
     isOpen: boolean;
@@ -10,8 +11,23 @@ export function NewTransactionModal({
     onRequestClose,
 }: NewTransactionModal) {
     return (
-        <Modal isOpen={isOpen} onRequestClose={onRequestClose}>
-            <h1>Cadastrar Transaction</h1>
+        <Modal
+            isOpen={isOpen}
+            onRequestClose={onRequestClose}
+            overlayClassName="react-modal-overlaay"
+            className="react-modal-content"
+        >
+            <Container>
+                <h2>Cadastrar Transaction</h2>
+
+                <input placeholder="Título" />
+
+                <input type="number" placeholder="Valor" />
+
+                <input placeholder="Categoria" />
+
+                <button type="submit">Cadastrar</button>
+            </Container>
         </Modal>
     );
 }
