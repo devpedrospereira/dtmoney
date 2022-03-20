@@ -4,6 +4,7 @@ import { Dashboard } from "./components/dashboard";
 import { Header } from "./components/header";
 import { GlobalStyle } from "./styles/global";
 
+Modal.setAppElement("#root")
 export function App() {
     const [isNewTransactionModalOpen, setisNewTransactionModalOpen] =
         useState(false);
